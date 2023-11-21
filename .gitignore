@@ -1,0 +1,7 @@
+anotacao.txt
+node_modules
+.parcel-cache
+dist
+package-lock.json
+package.json
+
