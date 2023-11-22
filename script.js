@@ -5,9 +5,11 @@ let scene, camera, renderer;
 let particles;
 const rotatingParticlesCount = 11700;
 
+let palavra = document.getElementById("formar");
+
 scene = new THREE.Scene();
 
-camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 5000);
+camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
 camera.position.z = 1500;
 camera.position.x = 100;
 camera.position.y = 100;
@@ -131,8 +133,8 @@ const particleMaterial = new THREE.PointsMaterial({ size: 10, vertexColors: true
 particles = new THREE.Points(particleGeometry, particleMaterial);
 scene.add(particles);
 
-animate();
 
+var teste =0;
 function animate() {
     const positions = particles.geometry.attributes.position.array;
     const positionsFinal = particleWord.geometry.attributes.position.array;
@@ -154,19 +156,61 @@ function animate() {
         let randomY = Math.random() * 2 - 1;
         let randomZ = Math.random() * 2 - 1;
 
-
         positions[i] += randomX;
-        positions[i + 1] += randomY;
-        positions[i + 2] += randomZ;
+        positions[i + 1] +=  randomY;
+         positions[i + 2] +=  randomZ;
+       if(palavra.checked){
+        // positions[i] = x2;
+        // positions[i + 1] =  y2;
+        // positions[i + 2] =  z2;
+
+  if(positions[i]<positionsFinal[i]){
+    
+
+    if(positions[i]!==positionsFinal[i]){
+        positions[i]+=1;
+    }
+  }else{
+    if(positions[i]!==positionsFinal[i]){
+        positions[i]-=1;
+    }
+  }
+
+
+  if(positions[i+1]<positionsFinal[i+1]){
+    
+
+    if(positions[i+1]!==positionsFinal[i+1]){
+        positions[i+1]+=1;
+    }
+  }else{
+    if(positions[i+1]!==positionsFinal[i+1]){
+        positions[i+1]-=1;
+    }
+  }
+
+
+  if(positions[i+2]<positionsFinal[i+2]){
+    
+
+    if(positions[i+2]!==positionsFinal[i+2]){
+        positions[i+2]+=1;
+    }
+  }else{
+    if(positions[i+2]!==positionsFinal[i+2]){
+        positions[i+2]-=1;
+    }
+  }
+       }
 
     }
 
     particles.geometry.attributes.position.needsUpdate = true;
     particleWord.geometry.attributes.position.needsUpdate = true;
 
-    particles.rotation.x += 0.001;
+    // particles.rotation.x += 0.001;
     particles.rotation.y += 0.001;
-    particles.rotation.z += 0.001;
+    // particles.rotation.z += 0.001;
 
    // particleWord.rotation.x += 0.01;
     particleWord.rotation.y += 0.01;
