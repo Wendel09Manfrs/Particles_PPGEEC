@@ -16,15 +16,53 @@
     <div id="controles">
         <div id="box">
 
-                <label for="formar"
-                    style="color: rgb(255, 255, 255); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> Formar Palavra</label>
-                <input type="checkbox" id="formar">
+            <label for="formar" style="color: rgb(255, 255, 255); font-family:Arial Narrow Bold;">
+                Formar Palavra</label>
+            <input type="checkbox" id="formar">
+
+
+
+
 
 
         </div>
 
+        <div id="escolhaText">
+            <label for="textura" style="color: rgb(255, 255, 255); font-family: Arial Narrow Bold;">Selecione
+                uma textura:</label>
+            <select id="textura" style="width: 50px;">
+                <option value="luz">Luz</option>
+                <option value="bolha">Bolha</option>
+                <option value="diamante">Diamante</option>
+                <option value="olho">Olho</option>
+                <option value="floco">Floco de neve</option>
+                <option value="bola">Bola</option>
+                <option value="semTextura">Sem textura</option>
+            </select>
+            <button id="mudaTextura">Alterar Textura</button>
+
+
+        </div>
+
+        <div>
+            <label for="qtdParticle" style="color: rgb(255, 255, 255); font-family: Arial Narrow Bold;">Quantidade
+                de particulas:</label>
+            <input style="width:50px; height: 12px;" type="number" id="qtdParticle"
+                title="Insira um numero de 0 a 10000" required placeholder="Insira um valor" min="100" max="10000">
+            <button id="mudaQtd">Gerar</button>
+        </div>
+
+        <div>
+            <label for="qtdParticle" style="color: rgb(255, 255, 255); font-family: Arial Narrow Bold;">Defina a cor do
+                background:</label>
+            <input type="color" id="cor" value="#000000">
+        </div>
     </div>
+
     <script src="script.js" type="module"></script>
+
+
+
 </body>
 
 </html>
