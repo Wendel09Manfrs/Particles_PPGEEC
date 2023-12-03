@@ -11,19 +11,21 @@
 <body>
 
 
-
-
     <div id="controles">
         <div id="box">
 
-            <label for="formar" style="color: rgb(255, 255, 255); font-family:Arial Narrow Bold;">
-                Formar Palavra</label>
-            <input type="checkbox" id="formar">
+            <div>
+                <label for="formar" style="color: rgb(255, 255, 255); font-family:Arial Narrow Bold;">
+                    Formar Palavra</label>
+                <input type="checkbox" id="formar">
+            </div>
 
+            <div>
+                <label for="espalhar" style="color: rgb(255, 255, 255); font-family:Arial Narrow Bold;">
+                    Embaralhar Palavra</label>
+                <input type="checkbox" id="espalhar">
 
-
-
-
+            </div>
 
         </div>
 
@@ -36,19 +38,18 @@
                 <option value="diamante">Diamante</option>
                 <option value="olho">Olho</option>
                 <option value="floco">Floco de neve</option>
-                <option value="bola">Bola</option>
+                <option value="estrela">Estrela</option>
                 <option value="semTextura">Sem textura</option>
             </select>
             <button id="mudaTextura">Alterar Textura</button>
-
 
         </div>
 
         <div>
             <label for="qtdParticle" style="color: rgb(255, 255, 255); font-family: Arial Narrow Bold;">Quantidade
                 de particulas:</label>
-            <input style="width:50px; height: 12px;" type="number" id="qtdParticle"
-                title="Insira um numero de 0 a 10000" required placeholder="Insira um valor" min="100" max="10000">
+            <input style="width:70px; height: 12px;" type="number" id="qtdParticle"
+                title="Insira um numero de 0 a 10000" maxlength="5" required placeholder="Insira um valor" min="100" max="10000">
             <button id="mudaQtd">Gerar</button>
         </div>
 
