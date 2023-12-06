@@ -1,6 +1,6 @@
 # Particles_PPGEEC
 
-Sistema Solar feito em JavaScript, HTML e CSS da disciplina de Computação Gráfica.
+Sigla PPGEEC feita em JavaScript, HTML e CSS da disciplina de Computação Gráfica.
 
  **Integrantes**
 
