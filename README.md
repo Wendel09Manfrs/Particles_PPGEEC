@@ -50,4 +50,4 @@ Siga os passos abaixo para configurar e executar o projeto em sua máquina local
 
    Para visualizar a cena gerada, basta acessar em seu navegador o link: [http://localhost:1234](http://localhost:1234).
 
-6. **Link do vídeo de demonstração da Aplicação Web de Animação com Partículas** [até meia noite]( até meia noite)
+6. **Link do vídeo de demonstração da Aplicação Web de Animação com Partículas** [https://youtu.be/Ry5YUDhF1_E](https://youtu.be/Ry5YUDhF1_E)
